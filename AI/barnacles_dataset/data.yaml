@@ -1,0 +1,13 @@
+path: .
+names:
+- barnacles
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: barnacles-lnd34
+  url: https://universe.roboflow.com/stephen-7b2qu/barnacles-lnd34/dataset/1
+  version: 1
+  workspace: stephen-7b2qu
+test: test/images
+train: train/images
+val: valid/images

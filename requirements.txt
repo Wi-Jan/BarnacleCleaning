@@ -1,0 +1,27 @@
+# Python dependencies for the Barnacle Cleaning Robot control GUI.
+#
+# Install:
+#     pip install -r requirements.txt
+#
+# Tested on Python 3.14.5 on Windows 11. Earlier Python (3.11–3.13) should also
+# work — drop the +cu126 build tag from torch/torchvision if you do not have an
+# NVIDIA GPU (CPU-only inference is fine for the camera frame rate, just slower).
+
+# GUI / runtime
+pygame-ce==2.5.7
+pyserial==3.5
+pillow==12.2.0
+
+# AI detection (YOLO)
+ultralytics==8.4.60
+
+# Pinning torch against the CUDA 12.6 build that ships on the lab machine.
+# If torch refuses to install on your Python version, run:
+#     pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# to get the CPU-only build instead, then re-run this file with the torch lines
+# commented out.
+torch==2.12.0
+torchvision==0.27.0
+
+# Build-only (not needed to run gui.py directly; only needed by GUI/build.py).
+pyinstaller>=6.20
