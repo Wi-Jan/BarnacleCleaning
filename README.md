@@ -6,7 +6,11 @@ desktop control station and on-board AI barnacle detection.
 Built as an Integrated Design Project (KIG3011, Track 3, Group 36) at the
 Faculty of Engineering, Universiti Malaya.
 
-<!-- TODO: drop a photo or GIF of the robot here -->
+![The HullVanguard robot — magnetic crawler chassis with blade drum](docs/robot-overview.png)
+
+*Magnetic crawler tracks hold the 30 x 40 x 14 cm chassis to the hull while the
+blade drum crushes barnacles at a controlled clearance, so the hull's
+anti-fouling coating is never scraped.*
 
 ---
 
@@ -136,10 +140,21 @@ Covers frame construction and CRC8 verification against the ESP32 protocol.
 
 ## Hardware
 
-Schematics were drawn in EasyEDA; the exported sheets cover the power supply,
-topside control, onboard control and motor stages.
+The boards were drawn in EasyEDA. Exports for each stage:
 
-<!-- TODO: add docs/ with the schematic exports, then link them here -->
+| Stage | Sheet |
+|---|---|
+| Power supply | [`docs/schematic-1-power-supply.png`](docs/schematic-1-power-supply.png) |
+| Topside control | [`docs/schematic-2-topside-control.png`](docs/schematic-2-topside-control.png) |
+| Onboard control | [`docs/schematic-3-onboard-control.png`](docs/schematic-3-onboard-control.png) |
+| Motors | [`docs/schematic-4-motors.png`](docs/schematic-4-motors.png) |
+
+The whole system on one sheet: [`docs/schematic-full.svg`](docs/schematic-full.svg).
+
+Key parts: ESP32 controllers, NEMA 23 steppers on TB6600 drivers, JGB37-555
+24 V DC motor for the drum on an IBT-4 43 A driver, MAX485 transceivers,
+Mean Well LRS-350-24 supply, N35 neodymium magnets in the track segments, and
+a 6 mm 316 stainless blade drum.
 
 ---
 
