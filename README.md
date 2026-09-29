@@ -149,3 +149,12 @@ KIG3011 Integrated Design Project 2, Track 3, Group 36 — Universiti Malaya.
 
 The third-party barnacle dataset is credited above. Everything else in this
 repository is the group's own work.
+
+---
+
+## Licence
+
+MIT — see [LICENSE](LICENSE).
+
+The third-party barnacle dataset is CC BY 4.0 and credited above; the MIT
+licence covers this repository, not that dataset.
